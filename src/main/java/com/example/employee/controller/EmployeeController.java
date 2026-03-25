@@ -28,6 +28,14 @@ public class EmployeeController {
         employeeService.createEmployee(employeeRequest);
     }
 
+    @PostMapping("/test")
+    public void createNewEmployee() {
+        System.out.println("Create Employee Controller");
+
+    }
+
+
+
     @GetMapping("/employee")
     public List<EmployeeResponse> getAllEmployee(){
 
